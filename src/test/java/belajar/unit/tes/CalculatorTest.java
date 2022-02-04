@@ -2,9 +2,10 @@ package belajar.unit.tes;
 
 import belajar.unit.tes.displayNameGenerator.SimpleDisplayNameGenerator;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.function.Executable;
+import org.opentest4j.TestAbortedException;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.*;
 
 //@DisplayName("Test untuk Calculator class")
 @DisplayNameGeneration(SimpleDisplayNameGenerator.class)
@@ -39,7 +40,6 @@ public class CalculatorTest {
     }
 
     @Test
-    @Disabled
     public void testDivideSuccess(){
         Integer divide = calculator.divide(20, 10);
         assertEquals(2, divide);
@@ -48,5 +48,28 @@ public class CalculatorTest {
     @Test
     public void testDivideFailed(){
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(10, 0));
+    }
+
+    @Test
+    @Disabled
+    public void testComingSoon(){
+
+    }
+
+    @Test
+    public void testAborted(){
+        var profile = System.getenv("PROFILE");
+        if (!"DEV".equals(profile)){
+            throw new TestAbortedException("Test Aborted");
+        }
+
+        //Unit test untuk dev
+    }
+
+    @Test
+    public void testAssumptions(){
+        assumeTrue("DEV".equals(System.getenv("PROFILE")), "env tidak sesuai asumsi");
+
+        // unit test untuk dev
     }
 }
