@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: belajar.unit.tes.CalculatorTest
+Test set: belajar.unit.tes.ConditionTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.251 s - in belajar.unit.tes.CalculatorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.088 s - in belajar.unit.tes.ConditionTest

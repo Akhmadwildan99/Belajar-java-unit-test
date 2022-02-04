@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="belajar.unit.tes.CalculatorTest" time="0.251" tests="6" errors="0" skipped="3" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="belajar.unit.tes.IntegrationTest" time="0.068" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\wildan\AppData\Local\Temp\surefire1156096957462845223\surefirebooter7650622240818449099.jar C:\Users\wildan\AppData\Local\Temp\surefire1156096957462845223 2022-02-04T20-30-29_257-jvmRun1 surefire10835428676643601932tmp surefire_09660748878520889199tmp"/>
+    <property name="sun.java.command" value="C:\Users\wildan\AppData\Local\Temp\surefire984399399434573205\surefirebooter9717415391087199379.jar C:\Users\wildan\AppData\Local\Temp\surefire984399399434573205 2022-02-04T20-40-55_535-jvmRun1 surefire256459901035505058tmp surefire_013069320801267335983tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\wildan\Documents\java-basic\learnUnitTest\target\test-classes;C:\Users\wildan\Documents\java-basic\learnUnitTest\target\classes;C:\Users\wildan\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\wildan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\wildan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\wildan\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\wildan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\wildan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\wildan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\wildan\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\wildan\AppData\Local\Temp\surefire1156096957462845223\surefirebooter7650622240818449099.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\wildan\AppData\Local\Temp\surefire984399399434573205\surefirebooter9717415391087199379.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.1+12-39"/>
@@ -46,6 +46,7 @@
     <property name="java.version" value="17.0.1"/>
     <property name="user.dir" value="C:\Users\wildan\Documents\java-basic\learnUnitTest"/>
     <property name="os.arch" value="amd64"/>
+    <property name="groups" value="integration-test"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
@@ -56,27 +57,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAborted" classname="belajar.unit.tes.CalculatorTest" time="0">
-    <skipped message="Test Aborted" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Test Aborted
-	at belajar.unit.tes.CalculatorTest.testAborted(CalculatorTest.java:63)
-</skipped>
-    <system-out><![CDATA[Before All
-Before each
-After each
-]]></system-out>
-  </testcase>
-  <testcase name="testDivideFailed" classname="belajar.unit.tes.CalculatorTest" time="0.016"/>
-  <testcase name="testAddSuccess" classname="belajar.unit.tes.CalculatorTest" time="0.044"/>
-  <testcase name="testComingSoon" classname="belajar.unit.tes.CalculatorTest" time="0">
-    <skipped message="public void belajar.unit.tes.CalculatorTest.testComingSoon() is @Disabled"/>
-  </testcase>
-  <testcase name="testAssumptions" classname="belajar.unit.tes.CalculatorTest" time="0">
-    <skipped message="Assumption failed: env tidak sesuai asumsi" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: env tidak sesuai asumsi
-	at belajar.unit.tes.CalculatorTest.testAssumptions(CalculatorTest.java:71)
-</skipped>
-    <system-out><![CDATA[Before each
-After each
-]]></system-out>
-  </testcase>
-  <testcase name="testDivideSuccess" classname="belajar.unit.tes.CalculatorTest" time="0.012"/>
+  <testcase name="test1" classname="belajar.unit.tes.IntegrationTest" time="0.041"/>
+  <testcase name="test2" classname="belajar.unit.tes.IntegrationTest" time="0"/>
 </testsuite>
